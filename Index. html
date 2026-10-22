@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Omwenga Futuristic Hub | Electronics & Computing</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #172033;
+    }
+    header {
+      background: #101b35;
+      color: white;
+      padding: 24px 16px;
+      text-align: center;
+    }
+    header h1 { margin: 0 0 10px; }
+    nav { margin-top: 18px; }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .hero {
+      padding: 55px 20px;
+      text-align: center;
+      background: #dcecff;
+    }
+    .hero h2 { font-size: 32px; }
+    .hero p { line-height: 1.7; }
+    .button {
+      display: inline-block;
+      padding: 13px 20px;
+      background: #087b50;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 12px;
+    }
+    main { padding: 28px 16px; max-width: 950px; margin: auto; }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 16px;
+    }
+    .product {
+      background: white;
+      padding: 24px 16px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 3px 12px #15234412;
+    }
+    .emoji { font-size: 44px; }
+    footer {
+      background: #101b35;
+      color: white;
+      text-align: center;
+      padding: 24px 12px;
+      margin-top: 25px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Omwenga Futuristic Hub</h1>
+    <p>Your destination for electronics and computing devices</p>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Upgrade Your Digital World</h2>
+    <p>Explore laptops, smartphones, computer accessories
+       and essential technology for work, study and everyday life.</p>
+    <a class="button"
+       href="https://wa.me/2547XXXXXXXX">
+       Enquire on WhatsApp
+    </a>
+  </section>
+
+  <main id="products">
+    <h2 style="text-align:center">Explore Our Products</h2>
+    <div class="products">
+      <article class="product">
+        <div class="emoji">💻</div>
+        <h3>Laptops & Computers</h3>
+        <p>Devices for business, school and personal use.</p>
+      </article>
+      <article class="product">
+        <div class="emoji">📱</div>
+        <h3>Smartphones</h3>
+        <p>Discover devices to keep you connected.</p>
+      </article>
+      <article class="product">
+        <div class="emoji">🎧</div>
+        <h3>Computer Accessories</h3>
+        <p>Keyboards, mice, headsets and more.</p>
+      </article>
+      <article class="product">
+        <div class="emoji">🔌</div>
+        <h3>Electronics & Gadgets</h3>
+        <p>Useful technology for your everyday needs.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer id="contact">
+    <h2>Contact Omwenga Futuristic Hub</h2>
+    <p>Have a product in mind? Contact us for availability and prices.</p>
+    <p>Serving customers in Kenya.</p>
+    <p>© 2026 Omwenga Futuristic Hub</p>
+  </footer>
+</body>
+</html>
