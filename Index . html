@@ -1,1 +1,130 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXORA TECH | Digital Future</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f4f7fb;color:#17243a}
+header{background:#10243d;color:white;padding:22px 7%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.logo{font-size:25px;font-weight:bold;color:#69b8ff}
+nav a{color:white;text-decoration:none;margin:8px;font-size:14px}
+.hero{background:linear-gradient(120deg,#10243d,#1762a0);color:white;padding:75px 8%;text-align:center}
+.hero h1{font-size:38px;margin:0 0 15px}
+.hero p{font-size:17px}
+.btn{display:inline-block;background:#1685e8;color:white;padding:13px 23px;border-radius:7px;text-decoration:none;border:0;cursor:pointer;font-weight:bold}
+section{padding:45px 7%}
+h2{text-align:center;font-size:27px}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px}
+.card{background:white;border-radius:12px;padding:20px;text-align:center;box-shadow:0 3px 15px #00000010}
+.product-icon{font-size:65px;background:#eaf3fc;padding:25px;border-radius:10px}
+.price{font-size:21px;font-weight:bold;color:#1676c5}
+.card button{width:100%;margin-top:10px}
+.about{text-align:center;background:#e8f1fb}
+footer{background:#10243d;color:white;text-align:center;padding:25px}
+input{padding:12px;width:100%;max-width:400px;border:1px solid #bbb;border-radius:7px}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">NEXORA TECH</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<div class="hero" id="home">
+<h1>Powering Your Digital Future.</h1>
+<p>Your destination for electronics and computing technology.</p>
+<a href="#products" class="btn">Explore Products</a>
+</div>
+
+<section id="products">
+<h2>Our Products</h2>
+<p style="text-align:center">Discover technology that moves you forward.</p>
+<div style="text-align:center;margin:20px">
+<input id="search" placeholder="Search products..." oninput="filterProducts()">
+</div>
+<div class="products" id="productList">
+
+<div class="card" data-name="laptop">
+<div class="product-icon">💻</div>
+<h3>Laptops</h3>
+<p>Powerful laptops for work and study.</p>
+<p class="price">From $450</p>
+<button class="btn" onclick="order('Laptops')">Order on WhatsApp</button>
+</div>
+
+<div class="card" data-name="smartphone phone">
+<div class="product-icon">📱</div>
+<h3>Smartphones</h3>
+<p>Modern smartphones for everyday life.</p>
+<p class="price">From $150</p>
+<button class="btn" onclick="order('Smartphones')">Order on WhatsApp</button>
+</div>
+
+<div class="card" data-name="desktop computer">
+<div class="product-icon">🖥️</div>
+<h3>Desktop Computers</h3>
+<p>Reliable computing for business and home.</p>
+<p class="price">From $550</p>
+<button class="btn" onclick="order('Desktop Computers')">Order on WhatsApp</button>
+</div>
+
+<div class="card" data-name="accessories headphones">
+<div class="product-icon">🎧</div>
+<h3>Accessories</h3>
+<p>Headphones, keyboards and other essentials.</p>
+<p class="price">From $20</p>
+<button class="btn" onclick="order('Accessories')">Order on WhatsApp</button>
+</div>
+
+</div>
+</section>
+
+<section class="about" id="about">
+<h2>About NEXORA TECH</h2>
+<p>We aim to make modern technology accessible through quality electronics, computing devices and excellent customer service.</p>
+</section>
+
+<section id="contact" style="text-align:center">
+<h2>Contact Us</h2>
+<p>Ready to find your next device?</p>
+<button class="btn" onclick="order('General enquiry')">Chat With Us</button>
+</section>
+
+<footer>
+<h3>NEXORA TECH</h3>
+<p>Powering Your Digital Future.</p>
+<p>© 2026 NEXORA TECH. All rights reserved.</p>
+</footer>
+
+<script>
+const WHATSAPP_NUMBER = "2547XXXXXXXX";
+
+function order(product) {
+ if (WHATSAPP_NUMBER.includes("X")) {
+   alert("Add your WhatsApp number in the website code first.");
+   return;
+ }
+ const message = "Hello NEXORA TECH! I am interested in " + product;
+ window.open("https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message), "_blank");
+}
+
+function filterProducts() {
+ const query = document.getElementById("search").value.toLowerCase();
+ document.querySelectorAll(".card").forEach(card => {
+   card.style.display = card.dataset.name.includes(query) ? "" : "none";
+ });
+}
+</script>
+
+</body>
+</html>
