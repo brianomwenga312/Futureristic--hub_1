@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEXORA TECH</title>
+<style>
+body{margin:0;font-family:Arial;background:#f1f5fa;color:#17243a}
+header,footer{background:#10243d;color:white;padding:22px;text-align:center}
+header h2{color:#69b8ff}
+.hero{background:linear-gradient(120deg,#10243d,#1762a0);color:white;text-align:center;padding:65px 15px}
+button{background:#1685e8;color:white;padding:12px 22px;border:0;border-radius:6px}
+section{padding:30px 15px;text-align:center}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px}
+.card{background:white;padding:20px;border-radius:10px}
+.icon{font-size:55px}
+.price{color:#1676c5;font-weight:bold}
+a{color:white;text-decoration:none}
+</style>
+</head>
+<body>
+<header>
+<h2>NEXORA TECH</h2>
+<p>Technology for a Better Future</p>
+</header>
+<div class="hero">
+<h1>Powering Your Digital Future</h1>
+<p>Your destination for electronics and computing technology.</p>
+<button onclick="document.getElementById('products').scrollIntoView()">Explore Products</button>
+</div>
+<section id="products">
+<h2>Our Products</h2>
+<div class="products">
+<div class="card"><div class="icon">💻</div><h3>Laptops</h3><p>Powerful laptops for work and study.</p><p class="price">From $450</p></div>
+<div class="card"><div class="icon">📱</div><h3>Smartphones</h3><p>Modern smartphones for everyday life.</p><p class="price">From $150</p></div>
+<div class="card"><div class="icon">🖥️</div><h3>Desktop Computers</h3><p>Reliable computers for home and business.</p><p class="price">From $550</p></div>
+<div class="card"><div class="icon">🎧</div><h3>Accessories</h3><p>Headphones, keyboards and more.</p><p class="price">From $20</p></div>
+</div>
+</section>
+<section>
+<h2>About NEXORA TECH</h2>
+<p>We bring modern electronics and computing technology closer to you.</p>
+</section>
+<section>
+<h2>Contact Us</h2>
+<p>Interested in our products? Contact us to make an enquiry.</p>
+</section>
+<footer>
+<h3>NEXORA TECH</h3>
+<p>Powering Your Digital Future.</p>
+<p>© 2026 NEXORA TECH</p>
+</footer>
+</body>
+</html>
